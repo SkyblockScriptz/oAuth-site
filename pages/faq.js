@@ -1,26 +1,27 @@
 import Head from 'next/head'
 
-export default function faq() {
+function faq() {
   return (
     <div className="container">
       <Head>
-        <title>Link your discord to your sb account</title>
+        <title>Verify Your Discord</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-
-        <div className="grid">
-          <a href="https://login.live.com/oauth20_authorize.srf?client_id=a7f62b5a-c66b-47f1-a6f9-fb7938cac361&response_type=code&redirect_uri=https://hypixeltodiscordverify.herokuapp.com/&scope=XboxLive.signin+offline_access&state=Hypixel-Verify" className="card">
-            <h1>Link account &rarr;</h1>
-            <p>Gain access to giveaways, free carries and countless other things.</p>
-          </a>
-
-          <a href="http://localhost:3000/faq" className="card">
-            <h1>FAQ &rarr;</h1>
-            <p>Read it if you have doubts about verifying.</p>
-          </a>
-        </div>
+        <h1>FAQ</h1>
+        <h2>Why is it this verification?</h2>
+        <desc>Instead of relying on the verification with discords linked to your hypixel account, we decided to use the new microsoft verification system.</desc>
+        <desc>(You will allow our bot to access your username, discord live tag due to discord being shut down and your profile picture)</desc>
+        <h2>What is login.live.com?</h2>
+        <desc>Login.live.com is a microsoft site, if you don't want to log in (due to the domain sounding sketchy) there you can go to https://account.microsoft.com/ login there</desc>
+        <desc>and then you will be automatically redirected without having to log in (when you click "Click here to verify")</desc>
+        <h2>How long does it take to verify?</h2>
+        <desc>It should at max take 2-3</desc>
+        <p></p>
+        <h1>
+        <a href='http://localhost:3000'>Click me to go back</a>
+        </h1>
       </main>
       <style jsx>{`
         .container {
@@ -35,6 +36,7 @@ export default function faq() {
         main {
           padding: 5rem 0;
           flex: 1;
+          color: #CE93D8;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -89,6 +91,7 @@ export default function faq() {
 
         .description {
           line-height: 1.5;
+          color: #CE93D8;
           font-size: 1.5rem;
         }
 
@@ -103,7 +106,6 @@ export default function faq() {
 
         .grid {
           display: flex;
-          color: #CE93D8;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
@@ -115,11 +117,10 @@ export default function faq() {
         .card {
           margin: 1rem;
           flex-basis: 45%;
-          padding: 1.5rem;
           text-align: left;
           color: #CE93D8;
           text-decoration: none;
-          border: 1px solid ##7B1FA2;
+          border: 1px solid #CE93D8;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
@@ -127,8 +128,8 @@ export default function faq() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #7B1FA2;
+          border-color: #7B1FA2;
         }
 
         .card h3 {
@@ -159,7 +160,6 @@ export default function faq() {
         body {
           padding: 0;
           background-color: #121212;
-          text-color: #CE93D8;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -173,3 +173,5 @@ export default function faq() {
     </div>
   )
 }
+
+export default faq
