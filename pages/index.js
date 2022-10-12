@@ -16,7 +16,7 @@ export default function faq() {
             <p>Gain access to giveaways, free carries and countless other things.</p>
           </a>
 
-          <a href="http://localhost:3000/faq" className="card">
+          <a href="https://hypixelauthenticator.vercel.app/faq" className="card">
             <h1>FAQ &rarr;</h1>
             <p>Read it if you have doubts about verifying.</p>
           </a>
