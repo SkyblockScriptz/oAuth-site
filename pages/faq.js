@@ -20,7 +20,7 @@ function faq() {
         <desc>It should at max take 2-3</desc>
         <p></p>
         <h1>
-        <a href='http://localhost:3000'>Click me to go back</a>
+        <a href='https://hypixelauthenticator.vercel.app'>Click me to go back</a>
         </h1>
       </main>
       <style jsx>{`
