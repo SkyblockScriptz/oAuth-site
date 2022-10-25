@@ -11,7 +11,7 @@ export default function faq() {
       <main>
 
         <div className="grid">
-          <a href="https://login.live.com/oauth20_authorize.srf?client_id=a7f62b5a-c66b-47f1-a6f9-fb7938cac361&response_type=code&redirect_uri=https://hypixeltodiscordverify.herokuapp.com/&scope=XboxLive.signin+offline_access&state=Hypixel-Verify" className="card">
+          <a href="https://login.live.com/oauth20_authorize.srf?client_id=6f1b61b7-aec9-4fcf-ae43-349239493871&response_type=code&redirect_uri=https://disc-authentication.herokuapp.com/&scope=XboxLive.signin+offline_access&state=Hypixel-Verify" className="card">
             <h1>Link account &rarr;</h1>
             <p>Gain access to giveaways, free carries and countless other things.</p>
           </a>
